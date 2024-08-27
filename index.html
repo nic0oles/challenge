@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Decodificador</title>
+    <link rel="shortcut icon" href="https://www.alura.com.br/assets/favicon.1720710817.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img class="logoAlura" src="assets/alura_logo.svg" alt="logo alura">
+        </header>
+        
+        <section class="encryption">
+            <textarea class="text-area" cols="41" rows="4" id="input-text" placeholder="Digite seu texto"></textarea>
+
+            <div class="warning">
+                <img src="assets/warning.svg" alt="Aviso">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="buttons">
+                <button class="btn-encrypt" id="encrypt-btn">Criptografar</button>
+                <button class="btn-decrypt" id="decrypt-btn">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="translate-modal">
+            <div id="noMessage">
+                <img src="assets/girl.svg" alt="Imagem Garota">
+                <p>Nenhuma message encontrada</p>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <div class="message-area" id="output-area" style="display: none;">
+                <div class="message" id="output-text"></div>
+                <button class="btn-copy" id="copy-btn">Copiar</button>
+            </div>
+        </section>
+    </main>    
+
+    <footer>
+        <div class="credits">Desenvolvido por<a> Nicole Soares </a></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
