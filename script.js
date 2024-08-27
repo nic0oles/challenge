@@ -40,7 +40,7 @@ function displayResult(result) {
 
     if (result) {
         noMessage.style.display = 'none';
-        outputArea.style.display = 'flex';
+        outputArea.style.display = "flex";
         outputText.textContent = result; 
     } else {
         outputArea.style.display = 'none'; 
